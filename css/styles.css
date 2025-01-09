@@ -1,3 +1,8 @@
+@font-face {
+  src: url("../fonts/FreeMonospacedBold.ttf");
+  font-family: FreeMono;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -44,6 +49,8 @@ header>.logo {
 }
 
 .logo h2 {
+  display: inline;
+  font-family: "FreeMono", monospace;
   font-weight: 900;
   font-size: 24px;
 }
@@ -80,6 +87,7 @@ header>.logo {
 .hero-main-text {
   font-size: 48px;
   color: var(--text-hero-1);
+  font-family: "FreeMono", monospace;
   font-weight: 900;
 }
 
@@ -91,14 +99,16 @@ header>.logo {
 
 #banner-img {
   background-color: #e5e7eb;
+  background-image: url("../imgs/WhiteBGdense.jpg");
+  background-repeat: repeat;
   display: flex;
-  align-items: center;
-  justify-items: center;
+  max-width: 512px;
+  min-height: 159px;
 }
 
 #banner-img>img {
-  width: 512px;
-  height: 100%;
+  max-width: 512px;
+  max-height: 100%;
 }
 
 button {
@@ -142,6 +152,9 @@ button {
   border-radius: 16px;
   width: 172px;
   height: 172px;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 .img-description {
