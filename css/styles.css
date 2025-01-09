@@ -53,6 +53,15 @@ header>.logo {
   font-family: "FreeMono", monospace;
   font-weight: 900;
   font-size: 24px;
+  margin-left: .5rem;
+}
+
+.logo a {
+  vertical-align: middle;
+  color: var(--text-hero-1);
+  text-decoration: none;
+  display: flex;
+  align-content: center;
 }
 
 .nav-menu>ul {
@@ -207,4 +216,9 @@ button {
 footer {
   padding: 24px;
   bottom: 0;
+  text-align: center;
+}
+
+footer a {
+  color: var(--btn-blue);
 }
